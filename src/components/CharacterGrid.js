@@ -7,7 +7,7 @@ export const CharacterGrid = ({ characters }) => {
         <div className="row row-cols-1 row-cols-md-2">
             {
                 characters.map(cha => (
-                   <CharacterItem cha= {cha}/>
+                   <CharacterItem cha= {cha} key={cha.id}/>
                 ))
             }
         </div>

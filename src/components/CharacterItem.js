@@ -2,7 +2,7 @@ import React from 'react'
 
 export const CharacterItem = ({cha}) => {
     return (
-        <div className="card mb-3" key={cha.id}>
+        <div className="card mb-3">
             <div className="row no-gutters">
                 <div className="col-md-4">
                     <img src={cha.image} className="card-img" alt="Rick and Morty" />

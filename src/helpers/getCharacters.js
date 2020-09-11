@@ -1,11 +1,11 @@
 
 
 export const getCharacters = async (name) => {
-    console.log("Hola", name);
     const url = `https://rickandmortyapi.com/api/character/?name=${name}`;
     const peticion = await fetch(url);
     const { results } = await peticion.json();
     const characters = results.map(cha => {
+        
         return {
             id: cha.id,
             name: cha.name,
@@ -16,7 +16,7 @@ export const getCharacters = async (name) => {
             image: cha.image,
         }
     });
-
+    
     return characters;
 
 };
